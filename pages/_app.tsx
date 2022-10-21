@@ -1,6 +1,8 @@
-import 'nextra-theme-docs/style.css'
-// import '@/styles/global.scss'
+import { AppProps } from 'next/app';
 
-export default function Nextra({ Component, pageProps }) {
-  return <Component {...pageProps} />
+import '~/styles/global.scss';
+import 'nextra-theme-docs/style.css';
+
+export default function Nextra({ Component, pageProps }: AppProps) {
+	return <Component {...pageProps} />;
 }
