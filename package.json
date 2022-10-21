@@ -53,11 +53,11 @@
 	},
 	"lint-staged": {
 		"*.{[cm]?js,tsx,ts}": [
-			"prettier --write",
+			"prettier --config ./prettier.config.cjs --write",
 			"eslint --fix"
 		],
 		"*.{md,html,mdx}": [
-			"prettier --write"
+			"prettier --config ./prettier.config.cjs --write"
 		]
 	}
 }

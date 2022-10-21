@@ -1,7 +1,7 @@
-import withNextra from 'nextra'
+import withNextra from 'nextra';
 
 export default withNextra({
-  theme: 'nextra-theme-docs',
-  themeConfig: './theme.config.mjs',
-  unstable_staticImage: true
-})({})
+	theme: 'nextra-theme-docs',
+	themeConfig: './theme.config.mjs',
+	unstable_staticImage: true
+})({});

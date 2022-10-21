@@ -1,4 +1,4 @@
-import Callout from 'nextra-theme-docs/callout';
+import Callout from "nextra-theme-docs/callout";
 
 # Next.js I18n
 
@@ -10,12 +10,12 @@ To add multi-language pages to your Nextra application, just need to config `i18
 
 ```js
 // next.config.js
-const withNextra = require('nextra')('nextra-theme-docs', './theme.config.mjs');
+const withNextra = require("nextra")("nextra-theme-docs", "./theme.config.mjs");
 module.exports = withNextra({
-	i18n: {
-		locales: ['en', 'zh', 'de'],
-		defaultLocale: 'en'
-	}
+  i18n: {
+    locales: ["en", "zh", "de"],
+    defaultLocale: "en",
+  },
 });
 ```
 
@@ -36,9 +36,9 @@ Finally, add the `i18n` option to your `theme.config.mjs` to configure the langu
 
 ```jsx
 i18n: [
-	{ locale: 'en', text: 'English' },
-	{ locale: 'zh', text: '中文' },
-	{ locale: 'de', text: 'Deutsch' },
-	{ locale: 'ar', text: 'العربية', direction: 'rtl' }
+  { locale: "en", text: "English" },
+  { locale: "zh", text: "中文" },
+  { locale: "de", text: "Deutsch" },
+  { locale: "ar", text: "العربية", direction: "rtl" },
 ];
 ```
