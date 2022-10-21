@@ -9,3 +9,13 @@ It supports Markdown and React components ([MDX](/features/mdx)), automatically 
 Here's what you will get in 1 minute:
 
 <Bleed>![Nextra Example](../public/demo.png)</Bleed>
+
+```jsx highlight=4,6-8
+import useSWR from "swr";
+function Profile() {
+  const { data, error } = useSWR("/api/user", fetcher);
+  if (error) return <div>failed to load</div>;
+  if (!data) return <div>loading...</div>;
+  return <div>hello {data.name}!</div>;
+}
+```

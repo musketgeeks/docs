@@ -11,7 +11,7 @@ are included in the syntax highlighter. If you want to add more languages, you c
 1. Run `yarn add prismjs prism-react-renderer` to add dependencies to your Nextra project.
 2. Add the following code to your `pages/_app.js`:
 
-```jsx
+```js
 import Prism from "prism-react-renderer/prism";
 
 (typeof global !== "undefined" ? global : window).Prism = Prism;

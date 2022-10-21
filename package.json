@@ -11,10 +11,9 @@
 		"build": "next build"
 	},
 	"dependencies": {
-		"@next/mdx": "^12.3.1",
 		"next": "^12.3.1",
 		"nextra": "^1.1.0",
-		"nextra-theme-docs": "^1.2.6",
+		"nextra-theme-docs": "^1.2.2",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
 		"sass": "^1.55.0"
@@ -23,6 +22,7 @@
 		"@commitlint/cli": "^17.1.2",
 		"@commitlint/config-conventional": "^17.1.0",
 		"@types/node": "^18.11.3",
+		"@types/prismjs": "^1.26.0",
 		"@types/react": "^18.0.21",
 		"@typescript-eslint/eslint-plugin": "^5.40.1",
 		"@typescript-eslint/parser": "^5.40.1",
