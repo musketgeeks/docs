@@ -1,7 +1,7 @@
 {
-  "index": "Introduction",
-  "get-started": "Get Started",
-  "features": "Features",
-  "themes": "Themes",
-  "advanced": "Advanced"
+	"index": "Introduction",
+	"get-started": "Get Started",
+	"git": "Git",
+	"frontend": "Frontend",
+	"backend": "Backend"
 }

@@ -19,7 +19,7 @@ const folders = fs
 	)
 	.map((dirent) => !['styles'].includes(dirent.name) && dirent.name);
 
-const foldersPaths = ['~/'];
+const foldersPaths = ['~/', '@pages', '@config', '@components'];
 
 module.exports = {
 	root: true,
@@ -27,7 +27,7 @@ module.exports = {
 		browser: true,
 		es2021: true
 	},
-	extends: ['plugin:react/recommended', 'airbnb', 'next', 'plugin:prettier/recommended'],
+	extends: ['plugin:react/recommended', 'airbnb', 'next', 'prettier'],
 	plugins: ['react', 'prettier'],
 	rules: {
 		'prettier/prettier': ['error', { usePrettierrc: true }]
@@ -137,7 +137,7 @@ module.exports = {
 					{
 						groups: [
 							['^react', '^next', '^recoil', '^@?\\w'],
-							['^styles'],
+							['^styles', '^@styles'],
 							[
 								`^(${foldersPaths.join('|')})(/.*|$)`,
 								`^(${folders.join('|')})(/.*|$)`,
