@@ -151,9 +151,19 @@ module.exports = {
 		},
 		{
 			// For config files
-			files: ['.eslintrc.cjs', 'commitlint.config.cjs', 'next.config.cjs'],
+			files: [
+				'.eslintrc.cjs',
+				'commitlint.config.cjs',
+				'next.config.cjs',
+				'prettier.config.cjs',
+				'*.cjs',
+				'*.mjs'
+			],
 			env: {
 				node: true
+			},
+			rules: {
+				'import/no-extraneous-dependencies': 'off'
 			}
 		}
 	]
